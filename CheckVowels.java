@@ -5,11 +5,17 @@ public class CheckVowels{
 		Scanner sc = new Scanner(System.in);
 		char c = sc.next().charAt(0);
 		c = Character.toLowerCase(c);
-		if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'){
-			System.out.println("Vowel");
+		if(Character.isLetter(c)){
+			if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'){
+				System.out.println("Vowel");
+			}
+			else{
+				System.out.println("Consonant");
+			}
 		}
 		else{
-			System.out.println("Consonant");
+			System.out.println("Not a Character..");
 		}
+		
 	}
 }
